@@ -8,9 +8,25 @@
     
     
     <bean id="student" class="com.ngocnv.common.Student">
-    	<property name="id" value="100"></property>
-    	<property name="name" value="ngocnv"></property>
-    	<property name="age" value="89"></property>	
+    	<!--<property name="id" value="100"></property>-->
+    	<!--<property name="name" value="ngocnv"></property>-->
+    	<!--<property name="age" value="89"></property>	-->
+		<constructor-arg value="100"></constructor-arg>
+		<constructor-arg value="ngocnv11"></constructor-arg>
+		<constructor-arg><null/></constructor-arg>
+		<constructor-arg>
+			<list>
+			<value>course1</value>
+			<value>course2</value>
+			<value>course3</value>
+			<!--<ref bean="address"/>-->
+			</list>
+		</constructor-arg>
+		<!--<constructor-arg ref="address"></constructor-arg>-->
     </bean>
+
+	<bean id="address" class="com.ngocnv.common.Address">
+		<property name="city" value="Ha Noi"></property>
+		<property name="postCode" value="0433"></property>
+	</bean>
 </beans>
-    
