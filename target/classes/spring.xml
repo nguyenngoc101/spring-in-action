@@ -19,6 +19,7 @@
 			<value>course1</value>
 			<value>course2</value>
 			<value>course3</value>
+			<!--<ref bean="address"/>-->
 			</list>
 		</constructor-arg>
 		<!--<constructor-arg ref="address"></constructor-arg>-->
